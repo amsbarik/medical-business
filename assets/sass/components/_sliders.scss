@@ -25,7 +25,8 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        background: #dcb75280;
+        background: $primary-opacity;
+        // background: $bg-deep;
         color: white;
         border: none;
         padding: 2px 6px 6px 6px ;
@@ -64,7 +65,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        background: #dcb75280;
+        background: $primary-opacity;
         color: white;
         border: none;
         padding: 2px 6px 6px 6px ;
@@ -101,7 +102,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        background: #dcb75280;
+        background: $primary-opacity;
         color: white;
         border: none;
         padding: 2px 6px 6px 6px ;
