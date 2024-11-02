@@ -5,12 +5,12 @@
 //  filter css start 
 
 .products-store{
-    background: $light;
+    // background: $light;
     .products-store-wrap{
         .product-list-wrap{
-            .filter-btn{font-size: .9rem; color: $dark ; font-weight: $medium; color: $dark;
-                i{color: $primary;}
-            }
+            // .filter-btn{font-size: .9rem; color: $dark ; font-weight: $medium; color: $dark;
+            //     i{color: $primary;}
+            // }
             
             .product-card{
                 .card-img-top{
@@ -20,6 +20,15 @@
         }
     }
 }
+
+
+
+
+// ::before css 
+
+
+
+
 
 // filter-close-btn,.filter-btn hide in lg devices
 @media (min-width: 992px) {
@@ -179,7 +188,7 @@
     font-size: 14px;
 }
 .filter-box label, span {
-    font-size: 13px;
+    // font-size: 13px;
     margin-top: 3px;
     color: $dark;
     transition: .3s;
