@@ -268,8 +268,8 @@
     .slider-3items-container {
         .slider-3items-wrapper {
             .product-card {
-                flex: 0 0 calc(100% - 10px); /* Adjust card width minus margin */
-                max-width: calc(100% - 10px); /* 100% / 5 = 20% */
+                flex: 0 0 calc(50% - 10px); /* Adjust card width minus margin */
+                max-width: calc(50% - 10px); /* 100% / 5 = 20% */
                 margin: 0 6px; /* Adjust margin */
                 /* height: 200px; */
             }

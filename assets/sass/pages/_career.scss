@@ -55,3 +55,47 @@
         }
     }
 }
+
+
+@media (max-width: 1200px) {
+    .career-top{
+    
+        height: 324px;
+    }
+}
+@media (max-width: 992px) {
+    .career-top{
+    
+        height: 224px;
+    }
+
+    .career{
+        .career-card{
+            .title{
+                font-size: 18px;
+            }
+    
+            .text-link{font-size: 12px;}
+        }
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .career-top{
+    
+        height: 180px;
+    }
+
+    .career{
+        .career-card{
+            .title{
+                font-size: 16px;
+                margin-bottom: 8px !important;
+            }
+    
+            // .text-link{font-size: 12px;}
+        }
+    }
+    
+}

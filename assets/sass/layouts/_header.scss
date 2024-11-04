@@ -4,8 +4,8 @@
 
 
 // header css start 
-header{background: $primary;}
-
+header{background: $primary; position: fixed; top: 0; width: 100%; left: 0; z-index: 1000;}
+.registration{font-size: 14px;}
 .header{
   // height: 7.25rem;
   .header-wrap{
@@ -25,6 +25,7 @@ header{background: $primary;}
 // navbar css start
 .navbar{
     background-color: $white;
+    box-shadow: $shadow;
     .navbar-toggler:focus {
         outline: none !important;
         box-shadow: none !important;
@@ -51,7 +52,7 @@ header{background: $primary;}
         //   }
 
         .main-categories{
-            
+
             .nav-item{
                 font-size: .875rem;
                 font-weight: $semibold;
@@ -75,7 +76,7 @@ header{background: $primary;}
                 .sub-categories{
                     position: absolute;
                     left: 0;
-                    top: 30px;
+                    top: 24px;
                     z-index: 100;
                     background: $bg-white;
                     border: 1px solid darken($color: $light, $amount: 10);
@@ -192,7 +193,7 @@ header{background: $primary;}
 @media (max-width:1200px) {
     .header{
         .header-wrap{
-          padding: 14px 0;
+          padding: 2px 0;
           .search-lg{
             input{font-size: .875rem;}
             .search-btn{font-size: .875rem;}
@@ -259,8 +260,8 @@ header{background: $primary;}
   .nav-bottom{
       display: none;
   }
-  .hidden-lg{display: none;}
-  .search-sm{display: none;}
+//   .hidden-lg{display: none;}
+//   .search-sm{display: none;}
   
 }
 
@@ -289,7 +290,7 @@ header{background: $primary;}
                 
                 .nav-item{
                     font-size: .8rem;
-                    // padding: 12px 0;
+                    margin-bottom: 8px;
                     .nav-link{
                         // letter-spacing: 2px;
                         i{font-size: .7rem; 
@@ -308,6 +309,40 @@ header{background: $primary;}
                         .sub-item{
                             font-size: .75rem;
                             // padding: .5rem 0;
+                            i{margin-left: 9rem;}
+
+
+                            // sub-sub-categories 
+                            .sub-sub-categories{
+                                position: absolute;
+                                left: 12rem;
+                                top: 0px;
+                                z-index: 100;
+                                background: $bg-white;
+                                border: 1px solid darken($color: $light, $amount: 10);
+                                padding: .5rem 1rem;
+                                border-radius: .15rem;
+                                width: 20rem;
+                                display: none;
+
+                                .sub-sub-item{
+                                    border-bottom: 1px dotted lighten($color: $dark, $amount: 20);
+                                    font-size: .875rem;
+                                    padding: .5rem 0;
+                                    font-weight: $medium;
+                                    position: relative;
+                                    a{color: $dark ; transition: .3s;
+                                        &:hover{
+                                            color: $primary;
+                                        }
+                                    }
+                                    &:last-child{
+                                        border-bottom: none;
+                                    }
+                                }
+                            }
+
+
                         }
                     }
                 }
@@ -370,9 +405,45 @@ header{background: $primary;}
                         .sub-item{
                             font-size: .72rem;
                             // padding: .5rem 0;
+
+                            i{margin-left: 9rem;}
+
+
+                            // sub-sub-categories 
+                            .sub-sub-categories{
+                                position: absolute;
+                                left: 6rem;
+                                top: 0px;
+                                z-index: 100;
+                                background: $bg-white;
+                                border: 1px solid darken($color: $light, $amount: 10);
+                                padding: .5rem 1rem;
+                                border-radius: .15rem;
+                                width: 20rem;
+                                display: none;
+
+                                .sub-sub-item{
+                                    border-bottom: 1px dotted lighten($color: $dark, $amount: 20);
+                                    font-size: .875rem;
+                                    padding: .5rem 0;
+                                    font-weight: $medium;
+                                    position: relative;
+                                    a{color: $dark ; transition: .3s;
+                                        &:hover{
+                                            color: $primary;
+                                        }
+                                    }
+                                    &:last-child{
+                                        border-bottom: none;
+                                    }
+                                }
+                            }
+
                         }
                     }
                 }
+
+                
             }
             
         }

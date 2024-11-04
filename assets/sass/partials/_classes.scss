@@ -3,7 +3,7 @@
 
 // btn class 
 
-
+.top-margin{padding-top: 110px;}
 .btn{
     color: $white;
     font-weight: 600;
@@ -173,8 +173,9 @@
 // media start
 @media (max-width: 1200px) {
     .section-heading{font-size: 1.4rem;}
-    .heading{font-size: 1.4rem;}
+    .heading{font-size: 2.2rem;}
     .card-title{font-size: .75rem;}
+    .section-title{font-size: 24px;}
     .btn{
         font-size: .875rem;
         border-radius: 8px;
@@ -185,7 +186,7 @@
 
 @media (max-width: 992px) {
     .section-heading{font-size: 1.1rem;}
-    .heading{font-size: 1.2rem;}
+    .heading{font-size: 1.5rem;}
     // .sub-heading{font-size: 1.2rem;}
     .card-title{font-size: .7rem;}
     .btn{
@@ -194,11 +195,17 @@
         
     }
 
-    // .text{
-    //     color: $text-color;
-    //     font-size: 1rem;
-    //     line-height: 1.6rem;
-    // }
+    // .title{font-size: 16px;}
+
+    .top-margin{padding-top: 60px;}
+
+    .section-padding{padding: 40px 0;}
+
+    .text{
+        // color: $text-color;
+        font-size: 13px;
+        line-height: 1.3rem;
+    }
     .card-text{
         color: $text-color;
         font-size: 0.75rem;
@@ -210,37 +217,20 @@
 
 
 @media (max-width: 768px) {
-    .heading{font-size: 1rem;}
-    .sub-heading{font-size: .9rem;}
-    .section-heading{ font-size: 1rem;}
+    .heading{font-size: .9rem;}
+    .sub-heading{font-size: .87rem;}
+    .section-heading{ font-size: .9rem;}
+
+    .section-padding{padding: 30px 0;}
+
+    .title{font-size: 14px;}
+    .section-title{font-size: 15px; line-height: 28px;}
     .btn {font-size: .7rem;}
     .text{font-size: .75rem;}
     .card-text{font-size: .7rem;}
-    // .card-title{font-size: .8rem !important; }
     .link{font-size: .78rem;}
 
-}
-
-
-@media (max-width: 768px) {
-    .heading{font-size: .9rem;}
-    .sub-heading{font-size: .87rem;}
-    .section-heading{ font-size: .9rem;
-        &::before{
-            height: 2px;
-            bottom: -10px;
-        }
-        &::after{
-            height: 2px;
-            bottom: -10px;
-        }
-    }
-    // .btn {font-size: .7rem;}
-    // .text{font-size: .7rem;}
-    // .card-text{font-size: .7rem;}
-    // .card-title{font-size: .8rem !important; }
-    // .link{font-size: .75rem;}
-
+    // .title{font-size: 16px;}
 }
 
 
