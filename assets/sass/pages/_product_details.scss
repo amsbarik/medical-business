@@ -155,11 +155,31 @@
                     height: 23.563rem;
                 }
             }
+
+            .download-btn{
+                // border: 1px solid $primary;
+                // border-radius: 4px;
+                .btn-title{
+                    // color: $dark ;
+                    // padding: 8px 16px;
+                    // margin-top: 4px;
+                    font-size: 14px;
+                }
+                // .btn{
+                //     border-top-left-radius: 0;
+                //     border-bottom-left-radius: 0;
+                // }
+    
+            }
     
             // product information start 
             .product-info{
                 .product-title{
                     font-size: 1.2rem;
+                }
+
+                .title{
+                    font-size: 1.3rem;
                 }
                 .price{font-size: 1.6rem;
                     span{font-size: 1rem;}
@@ -251,6 +271,10 @@
             // product information start 
             .product-info{
                 // qty-select 
+
+                .title{
+                    font-size: 1rem ;
+                }
                 .qty-select{
                     .qty-controls {
                         .qty-input {
