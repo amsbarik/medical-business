@@ -1,3 +1,50 @@
+// Image full screen slider popup js start
+document.addEventListener('DOMContentLoaded', () => {
+    const popupContainer = document.getElementById('popupContainer');
+    const popupCloseButton = document.querySelector('.popup-close');
+    const carouselInner = document.querySelector('#popupSlider .carousel-inner');
+    // const productImages = Array.from(document.querySelectorAll('.event-img'));
+    const productImages = Array.from(document.querySelectorAll('.add-to-view'));
+
+    // Open popup when any .show-popup element is clicked
+    document.querySelectorAll('.show-popup').forEach((item, index) => {
+        item.addEventListener('click', () => {
+            // Clear previous images in the slider
+            carouselInner.innerHTML = '';
+
+            // Populate the slider with all event images
+            productImages.forEach((img, imgIndex) => {
+                const carouselItem = document.createElement('div');
+                carouselItem.classList.add('carousel-item');
+                if (imgIndex === index) carouselItem.classList.add('active'); // Make the clicked image active
+                
+                const sliderImg = document.createElement('img');
+                sliderImg.src = img.src;
+                sliderImg.classList.add('d-block', 'w-100', 'slider-img');
+                sliderImg.alt = img.alt;
+
+                carouselItem.appendChild(sliderImg);
+                carouselInner.appendChild(carouselItem);
+            });
+
+            // Show the popup container
+            popupContainer.style.display = 'flex';
+        });
+    });
+
+    // Close popup when the close button is clicked
+    popupCloseButton.addEventListener('click', () => {
+        popupContainer.style.display = 'none';
+    });
+
+    // Optional: close popup when clicking outside of the popup-wrapper
+    popupContainer.addEventListener('click', (event) => {
+        if (event.target === popupContainer) {
+            popupContainer.style.display = 'none';
+        }
+    });
+});
+
 
 
 
@@ -57,7 +104,7 @@ document.querySelectorAll('.slider-wrapper').forEach((sliderWrapper, index) => {
 });
 
 
-// panjabi 3 items slide js start
+// category 3 items slide js start
 document.querySelectorAll('.slider-3items-wrapper').forEach((sliderWrapper, index) => {
     const productCards = sliderWrapper.querySelectorAll('.product-card');
     const prevBtn = sliderWrapper.closest('.slider-3items-container').querySelector('.prev-btn');
